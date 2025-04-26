@@ -1,2 +1,2 @@
 # Projeto-hamburgueria
-Trabalho Final: HTML, CSS e JavaScript
+Trabalho faculdade Web: HTML, CSS e JavaScript
