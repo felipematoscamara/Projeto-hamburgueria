@@ -1,0 +1,359 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+body{
+    background-image: url(imagens/fundo\ 1.png);
+    background-size: 100%;
+    background-attachment: fixed;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+button{
+    cursor: pointer;
+}
+
+/*Criando uma barra de navegacao*/
+.conteudo_cabeçalho{
+    max-width: 1300px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.instagram{
+    align-items: center;
+    display: flex;
+    transition: transform 0.2s;
+}
+
+.logo_insta{
+    transition: transform 0.2s;
+}
+
+.logo_insta:hover{
+    transform: scale(1.1);
+}
+
+.instagram img{
+    width: 30px;
+    margin-right: 1rem;
+}
+
+.cabeçalho>div{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+div img{
+    width: 82px;
+}
+
+.cabeçalho{
+    color: #f9b025;
+    background-color: #171717;
+    box-shadow: 10px 0px 10px black;
+    padding: 0.9rem;
+    position: sticky;
+    top: 0;
+}
+
+nav ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+nav ul li{
+    margin-right: 1.5rem;
+}
+
+nav ul li:hover{
+    transform: translateY(-Spx);
+    transition: all 0.2s;
+    font-weight: bold;
+}
+
+.cabeçalho ul li a{
+    color: #f9b025;
+    text-decoration: none;
+}
+
+/*Criando a pagina home*/
+.header-bottom-side{
+    display: flex;
+    align-items: center;
+    justify-self: center;
+    padding: 6rem;
+}
+
+.header-bottom-side-left{
+    height: 100%;
+    flex-basis: 100%;
+}
+
+.header-bottom-side-left h1{
+    color: white;
+    margin-top: 0;
+    font-size: 5rem;
+    margin-bottom: 1.5rem;
+    text-shadow: 2px 2px #f9b025;
+}
+
+.header-bottom-side-left p{
+    color: white;
+    font-family: arial;
+    font-size: 1.1rem;
+    line-height: 1.5rem;
+    text-shadow: 1px 1px 1px #000000;
+}
+
+.name{
+    color: #f9b025;
+}
+
+.header-bottom-side-right{
+    flex-basis: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.header-bottom-side-right img{
+    width: 110%;
+}
+
+/*Criando o cardapio*/
+
+.cardapio{
+    font-size: 2.5rem;
+    margin-left: 6rem;
+    color: white;
+    text-shadow: 1px 1px#f9b025;
+}
+
+.main{
+    display: flex;
+    justify-content: space-between;
+    padding-left: 6rem;
+    padding-right: 6rem;
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+}
+
+.card{
+    background-color: white;
+    color: #000000;
+    height: 410px;
+    width:265px;
+    border-radius: 10px;
+    box-shadow: rgb(0, 0, 0) 0px 14px 28px, rgb(0, 0, 0) 0px 10px 10px;
+    text-align: center;
+}
+
+.card img{
+    width: 100%;
+    border-radius: 10px;
+}
+
+.card p{
+    font-size: 15px;
+    padding: 10px 10px;
+}
+
+.main h5{
+    padding-top: 10px;
+    color: rgb(189, 11, 11);
+    font-size: 18px;
+}
+.main span{
+    font-size: 14px;
+    color: gray;
+}
+
+.botao{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.pedido{
+    display: inline-block;
+    transition: transform 0.2s;
+    background-color: #f9b025;
+    border: none;
+    border-radius: 8px;
+    height: 45px;
+    width: 220px;
+    font-size: 1rem;
+    box-shadow: rgb(0, 0, 0) 0px 14px 28px, rgb(0, 0, 0) 0px 10px 10px;
+}
+
+.pedido:hover{
+    transform: translateY(-10px);
+}
+
+/*localizacao e redes sociais*/
+.localizacao{
+
+    justify-content: space-around;
+    display: flex;
+    padding: 6rem;
+    color: white;
+    
+    font-size: 21px;
+    text-shadow: 1px 1px#f9b025;
+}
+
+/*Carrinho de compras*/
+.carrinho{
+    color: white;
+    padding: 6rem;
+}
+
+.page-title{
+    color: white;
+    font-size: 2.5rem;
+    margin-bottom: 3rem;
+    text-shadow: 1px 1px#f9b025;
+
+}
+
+.conteudo-carrinho{
+    
+    display: flex;
+}
+
+section{
+    flex: 1;
+}
+
+table{
+    width: 100%;
+    border-collapse: collapse;
+}
+
+thead tr th{
+    text-align: left;
+    padding-bottom: 10px;
+    text-transform: uppercase;
+    color: #f9b025;
+}
+
+.produto{
+    display: flex;
+    align-items: center;
+}
+
+.produto img{
+    width: 120px;
+    border-radius: 6px;
+}
+
+tbody tr td{
+    padding: 10px 0;
+}
+
+.nome{
+    font-size: 20px;
+    margin-left: 20px;
+}
+
+.remove{
+    background: #ddd;
+    border: 0;
+    width: 30px;
+    height: 30px;
+    border-radius: 3px;
+    font-size: 19px;
+}
+
+.remove:hover{
+    background-color: #ccc;
+}
+
+.qty{
+    background: #ddd;
+    display: inline-flex;
+    color: #000000;
+    align-items: center;
+    font-size: 19px;
+    height: 30px;
+    min-width: 66px;
+    justify-content: space-around;
+    border-radius: 3px;
+    height: 30px;
+}
+
+.qty button{
+    border: none;
+    background-color: #ddd;
+    font-size: 20px;
+    padding: 0 16px;
+    height: 100%;
+    border-radius: 3px;
+}
+
+.qty button:hover{
+    background: #ccc;
+}
+
+/*resumo da compra*/
+.resumo{
+    padding: 15px 20px;
+    font-size: 18px;
+    border: 1px solid #686868;
+}
+
+.preço-final{
+    color:  rgb(189, 11, 11);
+}
+
+.finalizar{
+    background-color: green;
+    width: 100%;
+    height: 40px;
+    color: white;
+    border: none;
+    text-transform: uppercase;
+    letter-spacing: 1px;
+    margin-top: 40px;
+}
+
+.finalizar:hover{
+    background-color: rgb(0, 182, 0);
+}
+
+aside{
+    background-color: gray;
+    height: 13rem;
+    width: 17rem;
+}
+
+.box{
+    height: 100%;
+    color: #000000;
+    border: 1px solid #ccc;
+    background: #ddd;
+}
+
+.info{
+    padding: 10px 20px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.info .frete{
+    font-size: 14px;
+    color: green;
+}
+
+footer{
+    display: flex;
+    padding: 15px 20px;
+    background: #a4a4a4;
+    font-size: 20px;
+    justify-content: space-between;
+}
